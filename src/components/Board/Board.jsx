@@ -19,7 +19,6 @@ const Board = () => {
   const [selectedPiece, setSelectedPiece] = useState({});
   console.log(board);
 
-
   const movePiece = (piece, start, end) => {
     if (turn !== piece[0]){
       return
@@ -34,10 +33,11 @@ const Board = () => {
 
   }
 
-
   return (
     <div>
-      Turn: {turn === 'w' ? "WHITE" : "BLACK"}
+      <span className="turn">
+        Turn: <img style={{ padding: '5px', width: '4ch', height: '4ch' }}  src={turn === 'w' ? `assets/pieces/wk.svg` : `assets/pieces/bk.svg`} alt={turn} />
+      </span>
       <div id="board"> 
         {board.map((r, rIndex) => {
           return (

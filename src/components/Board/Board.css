@@ -7,3 +7,11 @@
     grid-template-rows: repeat(8, 75px);
     border: solid 15px #0c0c0c;
 }
+
+
+.turn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
