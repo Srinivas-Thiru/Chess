@@ -5,11 +5,11 @@ import "./Square.css"
 
 const Square = ({piece, image, i, j }) => {
 
-    const sqNumber = i+j+2;
+    const sqNumber = i+j;
 
     const handleClick = (e) => {
         e.preventDefault();
-        console.log(piece);
+        console.log(`Peice: ${piece}, X=${j+1}, Y=${i+1}`);
     }
 
     return (
