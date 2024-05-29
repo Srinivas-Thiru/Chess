@@ -3,11 +3,18 @@ import "./Square.css"
 
 
 
-const Square = ({image, i, j }) => {
+const Square = ({piece, image, i, j }) => {
+
     const sqNumber = i+j+2;
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        console.log(piece);
+    }
+
     return (
         <div>
-            <div className={`square ${sqNumber%2 === 0 ? "white-square" : "black-square"}`} > <img src={image} alt="" /> </ div>
+            <div className={`square ${sqNumber%2 === 0 ? "white-square" : "black-square"}`} onClick={handleClick} > <img src={image} alt="" /> </ div>
             
         </div>
     )

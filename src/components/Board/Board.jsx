@@ -18,13 +18,13 @@ const pieces = [];
 for(let i = 0; i <8; i++) {
 
   // Positioning Pawns
-  pieces.push({image:"assets/pieces/bp.svg", x:1, y:i})
-  pieces.push({image:"assets/pieces/wp.svg", x:6, y:i})
+  pieces.push({piece:"bp" ,image:"assets/pieces/bp.svg", x:1, y:i})
+  pieces.push({piece:"wp", image:"assets/pieces/wp.svg", x:6, y:i})
   
   // Positioning Black
-  pieces.push({image:`assets/pieces/b${piecePosition[i]}.svg`, x:0, y:i})
+  pieces.push({piece:`b${piecePosition[i]}`, image:`assets/pieces/b${piecePosition[i]}.svg`, x:0, y:i})
   // Positioning White
-  pieces.push({image:`assets/pieces/w${piecePosition[i]}.svg`, x:7, y:i})
+  pieces.push({piece:`b${piecePosition[i]}`, image:`assets/pieces/w${piecePosition[i]}.svg`, x:7, y:i})
 
 
 }
@@ -59,14 +59,16 @@ const Board = () => {
     for(let i = 0; i < 8; i++){
         for(let j = 0; j < 8; j++){
           let image = undefined;
+          let piece = undefined;
           pieces.forEach(p => {
             if (p.x === i && p.y === j){
               image = p.image;
+              piece = p.piece;
             }
           })
 
             
-          board.push(<Square image={image} i={i} j={j} />)
+          board.push(<Square piece={piece} image={image} i={i} j={j} />)
         }
     }
 
