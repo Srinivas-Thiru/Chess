@@ -14,8 +14,9 @@ const Square = ({piece, image, i, j }) => {
 
     return (
         <div>
-            <div className={`square ${sqNumber%2 === 0 ? "white-square" : "black-square"}`} onClick={handleClick} > <img src={image} alt="" /> </ div>
-            
+            <div className={`square ${sqNumber%2 === 0 ? "white-square" : "black-square"}`} onClick={handleClick} > 
+                { image && <img src={image} alt="" /> }
+            </ div>
         </div>
     )
 }

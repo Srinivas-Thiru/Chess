@@ -24,7 +24,7 @@ for(let i = 0; i <8; i++) {
   // Positioning Black
   pieces.push({piece:`b${piecePosition[i]}`, image:`assets/pieces/b${piecePosition[i]}.svg`, x:0, y:i})
   // Positioning White
-  pieces.push({piece:`b${piecePosition[i]}`, image:`assets/pieces/w${piecePosition[i]}.svg`, x:7, y:i})
+  pieces.push({piece:`w${piecePosition[i]}`, image:`assets/pieces/w${piecePosition[i]}.svg`, x:7, y:i})
 
 
 }
