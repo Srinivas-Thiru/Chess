@@ -4,6 +4,12 @@
     width: 75px;
     height: 75px;
     border-radius: 2px;
+    border: solid 4px #0c0c0c;
+
+}
+
+.glow {
+    background-color: aqua;
 }
 
 .black-square {
@@ -16,4 +22,8 @@
 
 .square img{
     width: 40px;
+}
+
+.selected{
+    background-color: #fafaa6;
 }

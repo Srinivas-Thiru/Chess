@@ -1,11 +1,9 @@
 #board {
-    width: 600px;
-    height: 600px;
+    width: 608px;
+    height: 608px;
     background-color: #7c4c37 ;
-    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(8, 75px);
     grid-template-rows: repeat(8, 75px);
-
+    border: solid 15px #0c0c0c;
 }
-
