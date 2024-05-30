@@ -30,8 +30,10 @@ const Board = () => {
     setIsSelected(false);
     setSelectedPiece({});
     setTurn((prev) =>  prev === 'w' ? 'b':'w');
-
   }
+
+
+
 
   return (
     <div>
